@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Impact Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header>
+                <h1>Environmental Impact Calculator</h1>
+            </header>
+            <main>
+                <form id="calculatorForm">
+                    <label for="activity">Select activity:</label>
+                    <select id="activity" name="activity" required>
+                        <option value="">Please select</option>
+                        <option value="transport">Transportation</option>
+                        <option value="energy">Energy Use</option>
+                        <option value="food">Food Consumption</option>
+                    </select>
+
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" required>
+
+                    <label for="unit">Unit:</label>
+                    <input type="text" id="unit" name="unit" required>
+
+                    <button type="submit">Calculate</button>
+                </form>
+
+                <div id="result"></div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
